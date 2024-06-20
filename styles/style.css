@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-height: 100vh;
+    background-color: #121212;
+    color:white;
+    font-family: 'Montserrat' , sans-serif;
+    /* com 100vh estou dizendo que o elemento tera a altura 
+    de toda a tela observável */
+}
+/* 
+.container{
+    display: flex;
+    align-items: center;
+} */
+
+.w60{
+    float:left;
+    width:60%;
+}
+
+.w45{
+    float: left;
+    width:45%;
+}
+
+.w40{
+    float:left;
+    width:40%;
+}
+
+.w33{
+    float : left;
+    width:33%;
+}
+
+.w10{
+    width:10%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.hide{
+    display:none !important;
+}
+
+#popup-control{
+    opacity: 0;
+    margin-top: 44%;
+    margin-left:78%;
+    position:absolute;
+    width:20%;
+    padding: 10px;
+    background-color: #cb4444;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+#popup-message{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#close-popup-btn{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.close-control{
+    width:20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.message-control{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* login-container*/
+
+#login-container{
+    display: flex;
+}
+
+.apresentation-container {
+    height: 100vh;
+    margin-right:15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apresentation-container h2{
+    font-size:30px;
+    padding:8px 12px;
+    color:black;
+    background-color: #8a4dfa;
+}
+
+.apresentation-container p{
+    font-size:20px;
+    padding:12px 0;
+}
+
+.login-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-control{
+    padding: 70px 86px;
+    border: 1px solid #8a4dfa;
+    box-shadow: 0px 0px 16px 1px #8a4dfa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.title-login{
+    margin-bottom:15px;
+}
+
+.password-control-login, .email-control-login{
+    margin:10px 0;
+    width:150%;
+    display: flex;
+    align-items:center;
+}
+
+.label-control-login label{
+    width:100%;
+}
+
+.email-control-login input{
+    padding:19px 0;
+    font-size: 14px;
+    padding-left:6px;
+    width:100%;
+    border-radius:10px;
+    margin-right: 24px;
+    margin-bottom:10px;
+    background-color: #121212;
+    border:1px solid #8a8989;
+    color:white;
+}
+
+.password-control-login input{
+    padding:19px 0;
+    font-size: 14px;
+    padding-left:6px;
+    width:100%;
+    border-radius:10px;
+    background-color: #121212;
+    border:1px solid #8a8989;
+    color:white;
+}
+
+.password-control-login i{
+    margin-left:8px;
+    color:#8a8989;
+    cursor: pointer;
+}
+
+#hide-password-btn{
+    display: none;
+    color: #8a4dfa;
+    font-weight: bold;
+}
+
+.email-control-login input:focus , .password-control-login input:focus{
+    outline: #8a4dfa;
+    border-color:#8a4dfa;
+}
+
+.button-control-login{
+    margin:16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button-control-login button{
+    padding:12px 20px;
+    font-weight: bold;
+    background-color: #121212;
+    color:#8a4dfa;
+    border: 1px solid #8a4dfa;
+    cursor:pointer;
+    font-size:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-control-login button:hover{
+    transition:0.2s;
+    color:black;
+    background-color: #8a4dfa;
+}
+
+#loading-btn{
+    display: none;
+}
+
+.login-control > .horizontal-line{
+    width:90%;
+    border-bottom:1px solid #8a4dfa;
+    margin:10px 0;
+}
+
+.login-control a{
+    text-decoration:none;
+    color:white;
+    margin-top:15px;
+}
+
+.login-control a:hover{
+    text-decoration: underline;
+    transition:0.5s;
+}
+
+/* user-container */
+
+#user-container{
+    width:100%;
+}
+
+#user-header{
+    width: 100%;
+    margin-top:16px;
+}
+
+#back-to-login-control{
+    position: fixed;
+    display: flex;
+    margin-top: 4px;
+    margin-left: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#8a8989;
+    cursor:pointer;
+}
+
+#house-icon{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#back-login-text{
+    font-size: 15px;
+    opacity: 0;
+}
+
+.copyapp-title-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+    width: 100%;
+}
+
+.copyapp-title-control h2{
+    font-size:30px;
+    padding:8px 12px;
+    color:black;
+    background-color: #8a4dfa;
+}
+
+.user-information-container{
+    width:fit-content;
+    margin-top:5%;
+    margin-bottom:8%;
+    margin-left:50%;
+    transform: translate(-50% , 0);
+    display: flex;
+    align-items: center;
+    border: 1px solid #8a4dfa;
+    box-shadow: 0px 0px 16px 1px #8a4dfa;
+    border-radius: 15px;
+    padding:10px;
+}
+
+.user-image-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-image-control img{
+    width:250px;
+    margin: 30px 40px 0 40px;
+}
+
+.user-image-control h2{
+    font-size: 30px;
+    background-color: #8a4dfa;
+    color:white;
+    padding:4px 8px;
+    margin-top : 15px;
+    margin-bottom:30px;
+}
+
+.vertical-line{
+    height:275px;
+    border-right: 1px solid #8a4dfa;
+}
+
+.user-informations-control{
+    margin: 0 50px;
+}
+
+.information-control{
+    margin:20px 0;
+
+}
+
+.symbol-name-information-control{
+    display: flex;
+    align-items: center;
+    margin:10px 0;
+}
+
+.symbol-name-information-control i{
+    font-size:24px;
+    color: #8a4dfa;
+    margin-right:5px;
+}
+
+.symbol-name-information-control h3{
+    font-size:16px;
+}
+
+.information-control span{
+    padding: 1px 3px;
+    font-size:15px;
+}
+
+#user-password-html{
+    margin-right:5px;
+    background-color: #8a8989;
+    color: #8a8989;
+}
+
+.password-control{
+    display: flex;
+    align-items: center;
+}
+
+#reveal-password-html{
+    color:#8a8989;
+    width: fit-content;
+}
+
+#hide-password-html{
+    display: none;
+    color: #8a4dfa;
+    width: fit-content;
+    font-weight: bold;
+}
+
+#user-footer{
+    width: 100%;
+    background-color: #060606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socials h3{
+    font-size: 25px;
+    margin-bottom:8px;
+}
+
+.footer-information-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-information-control a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #8a8989;
+    margin: 0 12px;
+}
+
+.footer-information-control a:hover{
+    color:#8a4dfa;
+    transition:0.2s;
+
+}
+
+.footer-divisory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-divisory > .vertical-line{
+    height:55px;
+}
+
+.footer-mark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-mark h3{
+    font-size:25px;
+    margin-bottom:8px;
+    color: #8a4dfa;
+}
+
+.footer-mark span{
+    font-size: 17px;
+}
+
+
+
+
+
+
+

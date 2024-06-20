@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title-html">Login | Copy</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+    <script src="https://kit.fontawesome.com/8bf43e84bd.js" crossorigin="anonymous"></script><!--Font awesome-->
+</head>
+<body>
+
+    <div id="popup-control">
+        <div class="message-control">
+            <h3 id="popup-message"></h3>
+        </div>
+
+        <div class="close-control">
+            <i id="close-popup-btn" class="fa-solid fa-circle-xmark"></i>
+        </div>
+
+    </div><!--popup-control-->
+
+    <div id="login-container" class="">
+        
+            <div class="w60 apresentation-container">
+                <h2>Copy App</h2>
+
+                <div class="horizontal-line"></div>
+
+                <p>Log in or sign up to the Copy App for incredible experiences</p>
+            </div><!--w60 apresentation-container-->
+
+            <div class="w40 login-container">
+
+                <form class="login-control">
+
+                    <div class="label-control-login">
+                        <label for="user-email">Email</label>
+                    </div><!--label-control-login-->
+                    
+                    <div class="email-control-login">
+                        <input type="email" name="user-email" id="user-email" placeholder="Type your email..." autocomplete="off">
+                    </div><!--input-control-login-->
+
+                    <div class="label-control-login">
+                        <label for="user-password">Password</label>
+                    </div><!--label-control-login-->
+
+                    <div class="password-control-login">
+                        <input type="password" name="user-password" id="user-password" placeholder="Type your password...">
+                        <i id="reveal-password-btn" class="fa-regular fa-eye"></i>
+                        <i id="hide-password-btn" class="fa-regular fa-eye"></i>
+                    </div><!--input-control-login-->
+
+                    <div class="button-control-login">
+                        <button id="login-btn">LOG IN </button>
+                        <button id="loading-btn"><i id="loading-icon" class="fa-solid fa-spinner fa-spin"></i></button>
+                    </div><!--button-control-login-->
+
+                    <div class="horizontal-line"></div>
+
+                    <a id="signup-link">Register new user</a>
+                    
+                </form><!--login-control-->
+            </div><!--w40 login-container-->
+
+            <div class="clear"></div>
+
+    </div><!--login-container-->
+
+    <div id="user-container" class="hide">
+        <header id="user-header">
+            <div id="back-to-login-control">
+
+                <i  id="house-icon" class="fa-solid fa-house"></i>
+
+                <p id="back-login-text">Back to login page</p>
+
+            </div><!--back-to-login-control-->
+
+            <div class="copyapp-title-control">
+                <h2>Copy App</h2>
+            </div><!--copyapp-title-control-->
+        </header><!--user-header-->
+
+        <div class="user-information-container">
+
+            <div class="user-image-control">
+                <img src="images/userImage.png" alt="" id="user-img">
+
+                <h2 id="user-name-html">Nicholas</h2>
+            </div><!--user-image-control-->
+
+            <div class="vertical-line"></div>
+
+            <div class="user-informations-control">
+
+                <div class="information-control">
+
+                    <div class="symbol-name-information-control">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                    </div><!--symbol-name-information-control-->
+                    
+                    <span id="user-email-html">nicholasdeoliveiraeugenio@gmail.com</span>
+                </div><!--information-control-->
+
+                <div class="information-control">
+                    <div class="symbol-name-information-control">
+                        <i class="fa-solid fa-lock"></i>
+                        <h3>Password</h3>
+                    </div>
+                    <div class="password-control">
+                        <span id="user-password-html">@Nick04072004</span>
+                        <i id="reveal-password-html" class="fa-regular fa-eye"></i>
+                        <i id="hide-password-html" class="fa-regular fa-eye"></i>
+                    </div><!--password-control-->
+                    
+                </div><!--information-control-->
+
+                <div class="information-control">
+                    <div class="symbol-name-information-control">
+                        <i class="fa-solid fa-venus-mars"></i>
+                        <h3>Gender</h3>
+                    </div>
+
+                    <span id="user-gender-html">Male</span>
+                </div><!--information-control-->
+
+                <div class="information-control">
+                    <div class="symbol-name-information-control">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h3>From</h3>
+                    </div><!--symbol-name-information-control-->
+                    
+                    <span id="user-from-html">Santos, Brazil</span>
+                </div>
+            </div><!--user-informations-control-->
+
+        </div><!--user-information-container-->
+
+        <footer id="user-footer">
+            <div class="w45 footer-socials">
+                <h3>Socials</h3>
+
+                <div class="footer-information-control">
+                    
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div><!--footer-information-control-->
+
+                
+            </div><!--w45 footer-socials-->
+
+            <div class="w10 footer-divisory">
+                <div class="vertical-line"></div>
+            </div><!--w10 footer-divisory-->
+
+            <div class="w45 footer-mark">
+                <h3>Copy App</h3>
+                <span>Here your dreams are our priority!</span>
+            </div><!--w45 footer-mark-->
+
+            <div class="clear"></div>
+
+        </footer><!--user-footer-->
+    </div>
+    <script type="module" src="scripts/script.js"></script>
+    <script type="module" src="scripts/userData.js"></script>
+</body>
+
+</html>
